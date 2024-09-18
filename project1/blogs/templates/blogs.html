@@ -8,5 +8,10 @@
 <a href="../contact">contact</a>
 <a href="../members">members</a>
 <a href="../about">about</a>
+<ul>
+    {% for x in blogs   %}
+      <li>{{ x.title }} {{ x.detail }}</li>
+    {% endfor %}
+  </ul>
 </body>
 </html>
